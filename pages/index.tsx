@@ -73,12 +73,12 @@ export default function HomePage() {
               .then((data) => {
                 if (!data.message)
                   return navigator.clipboard
-                    .writeText(data.url)
+                    .writeText(`${window.location.href}${e.slug}`)
                     .then(() => {
-                      alert("URL Copied To Clipboard");
+                      return alert("URL Copied To Clipboard");
                     })
                     .catch((err) => {
-                      setError(
+                      return setError(
                         err.response?.data?.message || "An Error Occured"
                       );
                     });
