@@ -1,11 +1,16 @@
 import Link from "next/link";
 import Input from "./url";
+import { Metadata } from "next";
 
 interface Props {
   searchParams: {
     [key: string]: string;
   };
 }
+export const metadata: Metadata = {
+  title: "Success",
+  description: "Your shortened link has been created successfully.",
+};
 
 function Success(props: Props) {
   return (
