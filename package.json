@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@libsql/client": "0.3.3-pre.2",
     "@prisma/client": "^5.2.0",
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
